@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: cast-agent
+Version: 0.1.0
+Summary: CAST - Context Access through Structured Tools. A benchmark-agnostic agent framework.
+Requires-Python: >=3.11
+Requires-Dist: openai>=1.0
+Requires-Dist: tqdm
+Provides-Extra: langfuse
+Requires-Dist: langfuse; extra == "langfuse"
+Provides-Extra: examples
+Requires-Dist: python-dotenv; extra == "examples"
+Requires-Dist: datasets; extra == "examples"
+Requires-Dist: minisweagent; extra == "examples"
+Requires-Dist: ddgs; extra == "examples"
+Requires-Dist: duckduckgo_search; extra == "examples"
+Requires-Dist: numpy; extra == "examples"
+Requires-Dist: scipy; extra == "examples"
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"

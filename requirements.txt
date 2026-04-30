@@ -1,0 +1,22 @@
+# Core package
+openai>=1.0
+tqdm
+
+# Example harnesses
+python-dotenv
+datasets
+minisweagent
+
+# Optional tools used by OfficeQA web_search
+ddgs
+duckduckgo_search
+
+# Optional compute acceleration for OfficeQA compute tool
+numpy
+scipy
+
+# Testing
+pytest
+
+# Optional observability integration
+langfuse

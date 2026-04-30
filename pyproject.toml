@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cast-agent"
+version = "0.1.0"
+description = "CAST — Context Access through Structured Tools. A benchmark-agnostic agent framework."
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.0",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+langfuse = ["langfuse"]
+examples = [
+    "python-dotenv",
+    "datasets",
+    "minisweagent",
+    "ddgs",
+    "duckduckgo_search",
+    "numpy",
+    "scipy",
+]
+dev = ["pytest"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

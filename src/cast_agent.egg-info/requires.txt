@@ -1,0 +1,17 @@
+openai>=1.0
+tqdm
+
+[dev]
+pytest
+
+[examples]
+python-dotenv
+datasets
+minisweagent
+ddgs
+duckduckgo_search
+numpy
+scipy
+
+[langfuse]
+langfuse
